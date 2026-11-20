@@ -296,9 +296,12 @@ body{
     // 海報 / poster
     if (d.poster) {
       const img = $("poster");
-      img.src = d.poster.startsWith("http") ? d.poster : d.poster;
-      img.alt = `${p.display_name || ""} — ${cardId}`;
+      // onerror 必須在 src 之前掛上 —— 圖片若從快取立刻失敗,
+      // 事件會在賦值當下就觸發,之後才掛的處理函式永遠收不到。
+      // onerror must be attached before src: a cached failure fires immediately.
       img.onerror = () => $("poster-panel").classList.add("hidden");
+      img.alt = `${p.display_name || ""} — ${cardId}`;
+      img.src = d.poster;
       $("poster-cap").textContent = `${cardId} · ${p.id || ""}`;
     } else {
       $("poster-panel").classList.add("hidden");
