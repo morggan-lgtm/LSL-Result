@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>LSL — Training Result</title>
+<title>Living Scent Ledger — Training Result</title>
 <meta name="theme-color" content="#07090a">
 <meta name="robots" content="noindex">
 <style>
@@ -89,6 +89,7 @@ body{
 .fact .v{font-family:var(--mono);font-size:15px;color:var(--text);margin-top:5px}
 .fact .u{font-size:10px;color:var(--muted)}
 .memory{margin-top:13px;font-size:13.5px;line-height:1.65;color:var(--muted);font-style:italic}
+.translation{display:block;margin-top:5px;color:var(--muted);font-size:.9em;font-style:normal}
 
 /* ---- states ---- */
 .state{border:1px solid var(--line);background:var(--panel);padding:34px 20px;text-align:center}
@@ -112,37 +113,36 @@ body{
 <div class="wrap">
 
   <div class="mast">
-    <div class="tag">Limbic Sensing Laboratory</div>
-    <h1>TRAINING RESULT</h1>
+    <div class="tag">Living Scent Ledger · 生命氣味紀錄</div>
+    <h1>TRAINING RESULT · 訓練結果</h1>
     <div class="cid" id="mast-cid">—</div>
   </div>
 
   <!-- 狀態區 / state area -->
   <div id="state-loading" class="panel state">
     <div class="ico">◴</div>
-    <h3>讀取中<span class="dots"></span></h3>
-    <p>Retrieving your training record</p>
+    <h3>Loading · 讀取中<span class="dots"></span></h3>
+    <p>Retrieving your training record.<span class="translation" lang="zh-Hant">正在讀取你的訓練紀錄。</span></p>
   </div>
 
   <div id="state-pending" class="panel state hidden">
     <div class="ico">◴</div>
-    <h3>你的星球還在生成中<span class="dots"></span></h3>
-    <p>影像正在算圖，通常需要一到三分鐘。<br>這個頁面會自動重試，你也可以稍後再掃一次卡片。</p>
-    <p style="margin-top:10px;color:var(--dim)">Your planet is still being generated.<br>This page retries automatically.</p>
-    <div class="note" id="retry-note">下次重試 / next retry in 15s</div>
-    <button class="btn" id="retry-now">立即重試 / retry now</button>
+    <h3>Your planet is being generated · 你的星球正在生成中<span class="dots"></span></h3>
+    <p>The image usually takes one to three minutes. This page retries automatically; you can also scan your card again later.<span class="translation" lang="zh-Hant">影像通常需要一到三分鐘生成。頁面會自動重試；你也可以稍後再掃一次卡片。</span></p>
+    <div class="note" id="retry-note">Next retry in 15s · 15 秒後重試</div>
+    <button class="btn" id="retry-now">Retry now · 立即重試</button>
   </div>
 
   <div id="state-nocard" class="panel state hidden">
     <div class="ico warn">⬚</div>
-    <h3>沒有指定卡片</h3>
-    <p>請用卡片上的 QR code 開啟這個頁面。<br>Open this page by scanning the QR code on your card.</p>
+    <h3>No card specified · 未指定卡片</h3>
+    <p>Open this page by scanning the QR code on your card.<span class="translation" lang="zh-Hant">請掃描卡片上的 QR code 開啟此頁面。</span></p>
   </div>
 
   <div id="state-badcard" class="panel state hidden">
     <div class="ico warn">✕</div>
-    <h3>查無此卡</h3>
-    <p>這張卡片沒有對應的訓練紀錄。<br>No training record found for this card.</p>
+    <h3>No record found · 查無紀錄</h3>
+    <p>No training record was found for this card.<span class="translation" lang="zh-Hant">找不到這張卡片對應的訓練紀錄。</span></p>
     <div class="note" id="badcard-id"></div>
   </div>
 
@@ -150,7 +150,7 @@ body{
   <main id="result" class="hidden">
 
     <section class="panel">
-      <h2>Assignment</h2>
+      <h2>Assignment · 星球配對</h2>
       <p class="planet-name" id="planet-name">—</p>
       <div class="planet-sub" id="planet-sub">—</div>
       <blockquote class="dialogue" id="dialogue"></blockquote>
@@ -158,34 +158,34 @@ body{
     </section>
 
     <section class="panel" id="poster-panel">
-      <h2>Generated Record</h2>
+      <h2>Generated Record · 生成紀錄</h2>
       <img class="poster" id="poster" alt="" loading="lazy">
       <div class="poster-cap" id="poster-cap"></div>
     </section>
 
     <section class="panel">
-      <h2>Your Odour Vector</h2>
+      <h2>Your Odour Vector · 你的氣味向量</h2>
       <div class="radar-wrap"><svg id="radar" width="290" height="250" viewBox="0 0 290 250" aria-hidden="true"></svg></div>
       <div class="legend">
-        <span><i style="background:var(--acid)"></i>你 / you</span>
-        <span><i style="background:var(--cyan)"></i>星球 / planet</span>
+        <span><i style="background:var(--acid)"></i>you / 你</span>
+        <span><i style="background:var(--cyan)"></i>planet / 星球</span>
       </div>
       <div class="axis-rows" id="axis-rows"></div>
     </section>
 
     <section class="panel">
-      <h2>Classification</h2>
+      <h2>Classification · 分類結果</h2>
       <div class="scores" id="scores"></div>
     </section>
 
     <section class="panel" id="facts-panel">
-      <h2>Planet File</h2>
+      <h2>Planet File · 星球檔案</h2>
       <div class="facts" id="facts"></div>
       <p class="memory" id="memory"></p>
     </section>
 
     <div class="foot">
-      LIMBIC SENSING LABORATORY<br>
+      LIVING SCENT LEDGER · 生命氣味紀錄<br>
       <span id="foot-ts"></span>
     </div>
   </main>
@@ -269,7 +269,7 @@ body{
     countdown = RETRY_MS / 1000;
     timer = setInterval(() => {
       countdown--;
-      $("retry-note").textContent = `下次重試 / next retry in ${countdown}s`;
+      $("retry-note").textContent = `Next retry in ${countdown}s · ${countdown} 秒後重試`;
       if (countdown <= 0) { countdown = RETRY_MS / 1000; load(); }
     }, 1000);
   }
@@ -284,7 +284,7 @@ body{
     const sub = [p.star_class, p.id].filter(Boolean).join("  ·  ");
     $("planet-sub").textContent = sub || "";
 
-    $("dialogue").textContent = d.dialogue || "";
+    setBilingualText($("dialogue"), d.dialogue, d.dialogue_zh_tw);
     $("dialogue").classList.toggle("hidden", !d.dialogue);
 
     const desc = $("descriptors");
@@ -312,7 +312,7 @@ body{
     drawScores(d.scores || [], p.id);
     drawFacts(p);
 
-    $("memory").textContent = p.earth_memory || "";
+    setBilingualText($("memory"), p.earth_memory, p.earth_memory_zh_tw);
     $("memory").classList.toggle("hidden", !p.earth_memory);
 
     $("foot-ts").textContent = d.created_at ? fmt(d.created_at) : "";
@@ -327,9 +327,19 @@ body{
   function fmt(iso) {
     try {
       const dt = new Date(iso);
-      return dt.toLocaleString("zh-TW", { year:"numeric", month:"2-digit", day:"2-digit",
+      return dt.toLocaleString("en-GB", { year:"numeric", month:"2-digit", day:"2-digit",
         hour:"2-digit", minute:"2-digit" });
     } catch { return iso; }
+  }
+
+  function setBilingualText(el, english, chinese) {
+    el.textContent = english || "";
+    if (!chinese) return;
+    const translation = document.createElement("span");
+    translation.className = "translation";
+    translation.lang = "zh-Hant";
+    translation.textContent = chinese;
+    el.appendChild(translation);
   }
 
   function polygon(vec, cx, cy, r) {
@@ -408,10 +418,10 @@ body{
 
   function drawFacts(p) {
     const defs = [
-      ["Equilibrium temp", p.teq_k, "K"],
-      ["Mass", p.mass_earth, "× Earth"],
-      ["Star class", p.star_class, ""],
-      ["Tidally locked", p.tidally_locked === undefined ? undefined : (p.tidally_locked ? "YES" : "NO"), ""],
+      ["Equilibrium temp · 平衡溫度", p.teq_k, "K"],
+      ["Mass · 質量", p.mass_earth, "× Earth · 地球"],
+      ["Star class · 恆星光譜型", p.star_class, ""],
+      ["Tidally locked · 潮汐鎖定", p.tidally_locked === undefined ? undefined : (p.tidally_locked ? "YES · 是" : "NO · 否"), ""],
     ].filter(d => d[1] !== undefined && d[1] !== null && d[1] !== "");
     const box = $("facts"); box.innerHTML = "";
     if (!defs.length) { $("facts-panel").classList.add("hidden"); return; }
