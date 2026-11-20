@@ -15,7 +15,15 @@
       "aversive"
     ],
     "earth_memory": "Downwind of a hot spring: sulphur vapour hits your face and you hold your breath before you decide to.",
-    "earth_memory_zh_tw": "站在溫泉的下風處：硫磺蒸氣撲面而來，你還來不及思考，就已經屏住呼吸。"
+    "earth_memory_zh_tw": "站在溫泉的下風處：硫磺蒸氣撲面而來，你還來不及思考，就已經屏住呼吸。",
+    "sensory_anchors": [
+      "White steam at Beitou Thermal Valley — the instant the airway tightens",
+      "The half-second after a match is struck",
+      "Heat rising off summer asphalt: hot, dry, nowhere to step back to",
+      "Odourant added to leaking gas — the body reacts before the mind names it"
+    ],
+    "recommended_scent": "Struck match",
+    "display_color": "#C1440E"
   },
   "odour_vector": {
     "volatility": 1.0,
@@ -64,5 +72,64 @@
     }
   ],
   "dialogue": "",
-  "poster": "posters/LSL-0005.jpg"
+  "poster": "posters/LSL-0005.jpg",
+  "tui": {
+    "part1": {
+      "sample_id": "LSL-0005",
+      "timestamp": "2026-11-19T17:08:51.258366Z",
+      "input": "THUNDERSTORM",
+      "count": 3.0,
+      "last_time": 9.692,
+      "total_actions": 3.0,
+      "changes": 2.0,
+      "unique_choices": 2.0,
+      "target_tags": "1|3",
+      "selected_tags": "3"
+    },
+    "part2": {
+      "sample_id": "LSL-0005",
+      "timestamp": "2026-11-19T17:09:02.59523Z",
+      "session_time": 9.472,
+      "water": 92.766373,
+      "soil": 7.526882,
+      "forest": 17.595308,
+      "flower": 69.110458,
+      "fire": 48.191593,
+      "mineral": 25.415443,
+      "overall": 43.434341,
+      "slider_actions": 7.0,
+      "value_changes": 150.0,
+      "direction_changes": 2.0,
+      "total_travel": 573.997986,
+      "stabilisation_time": 1.08
+    },
+    "part3": {
+      "sample_id": "LSL-0005",
+      "timestamp": "2026-11-19T17:09:15.682098Z",
+      "session_time": 10.642,
+      "grid_cols": 50.0,
+      "grid_rows": 50.0,
+      "total_strokes": 7.0,
+      "total_points": 479.0,
+      "unique_cells": 625.0,
+      "coverage_ratio": 0.25,
+      "total_density": 28464.84375,
+      "mean_density": 45.543751,
+      "max_density": 255.0,
+      "revisit_count": 433.0,
+      "dwell_time": 0.987,
+      "path_length": 321.226532,
+      "direction_changes": 81.0,
+      "centroid_x": 0.413472,
+      "centroid_y": 0.373343,
+      "bounding_width": 0.74,
+      "bounding_height": 0.92,
+      "erase_actions": 0.0,
+      "reset_count": 1.0
+    }
+  },
+  "assets": {
+    "pom": "pom_LSL-0005.png",
+    "drawing": "drawing_LSL-0005.png"
+  }
 }

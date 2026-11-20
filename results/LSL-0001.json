@@ -15,7 +15,15 @@
       "neutral-slightly pleasant"
     ],
     "earth_memory": "A K-dwarf's amber light over a cool oxidised plain: iron-rich clay, a mineral smell that stays low and even.",
-    "earth_memory_zh_tw": "K 型矮星的琥珀色光芒灑在涼冷、氧化的平原上：富含鐵質的黏土散發礦物氣味，低沉而平穩地久久不散。"
+    "earth_memory_zh_tw": "K 型矮星的琥珀色光芒灑在涼冷、氧化的平原上：富含鐵質的黏土散發礦物氣味，低沉而平穩地久久不散。",
+    "sensory_anchors": [
+      "Damp red clay after rain",
+      "Cold iron railings in autumn",
+      "A quarry at dusk, dust settling",
+      "Old terracotta kept in shade"
+    ],
+    "recommended_scent": "Damp iron-rich clay",
+    "display_color": "#A0522D"
   },
   "odour_vector": {
     "volatility": 0.2532,
@@ -64,5 +72,64 @@
     }
   ],
   "dialogue": "",
-  "poster": "posters/LSL-0001.jpg"
+  "poster": "posters/LSL-0001.jpg",
+  "tui": {
+    "part1": {
+      "sample_id": "LSL-0001",
+      "timestamp": "2026-11-19T18:02:17.280856Z",
+      "input": "THUNDERSTORM",
+      "count": 1.0,
+      "last_time": 7.634,
+      "total_actions": 1.0,
+      "changes": 0.0,
+      "unique_choices": 1.0,
+      "target_tags": "1|3",
+      "selected_tags": "3"
+    },
+    "part2": {
+      "sample_id": "LSL-0001",
+      "timestamp": "2026-11-19T18:02:36.850995Z",
+      "session_time": 12.963,
+      "water": 53.56794,
+      "soil": 81.720428,
+      "forest": 24.731182,
+      "flower": 0.0,
+      "fire": 67.546432,
+      "mineral": 0.195503,
+      "overall": 37.960247,
+      "slider_actions": 8.0,
+      "value_changes": 202.0,
+      "direction_changes": 1.0,
+      "total_travel": 231.280563,
+      "stabilisation_time": 2.52
+    },
+    "part3": {
+      "sample_id": "LSL-0001",
+      "timestamp": "2026-11-19T18:03:09.58314Z",
+      "session_time": 30.0,
+      "grid_cols": 50.0,
+      "grid_rows": 50.0,
+      "total_strokes": 5.0,
+      "total_points": 1249.0,
+      "unique_cells": 1413.0,
+      "coverage_ratio": 0.5652,
+      "total_density": 123590.328125,
+      "mean_density": 87.466614,
+      "max_density": 255.0,
+      "revisit_count": 1235.0,
+      "dwell_time": 0.618,
+      "path_length": 791.08252,
+      "direction_changes": 235.0,
+      "centroid_x": 0.602513,
+      "centroid_y": 0.629086,
+      "bounding_width": 1.0,
+      "bounding_height": 1.0,
+      "erase_actions": 0.0,
+      "reset_count": 0.0
+    }
+  },
+  "assets": {
+    "pom": "pom_LSL-0001.png",
+    "drawing": "drawing_LSL-0001.png"
+  }
 }

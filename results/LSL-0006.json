@@ -15,7 +15,15 @@
       "neutral"
     ],
     "earth_memory": "Ten minutes before a storm: ozone with a metal edge, and the certainty that something is arriving.",
-    "earth_memory_zh_tw": "暴風雨來臨前十分鐘：帶著金屬氣息的臭氧味，讓你確信有什麼正要到來。"
+    "earth_memory_zh_tw": "暴風雨來臨前十分鐘：帶著金屬氣息的臭氧味，讓你確信有什麼正要到來。",
+    "sensory_anchors": [
+      "Ozone in the nose before a dry seasonal front",
+      "The gust a train pushes onto the platform before it arrives",
+      "Tasting a cold iron railing in winter",
+      "The few days between seasons when the body has not caught up"
+    ],
+    "recommended_scent": "Rain on cold metal",
+    "display_color": "#8B7D6B"
   },
   "odour_vector": {
     "volatility": 0.8638,
@@ -64,5 +72,64 @@
     }
   ],
   "dialogue": "",
-  "poster": "posters/LSL-0006.jpg"
+  "poster": "posters/LSL-0006.jpg",
+  "tui": {
+    "part1": {
+      "sample_id": "LSL-0006",
+      "timestamp": "2026-11-19T17:49:26.321137Z",
+      "input": "SMOKING",
+      "count": 2.0,
+      "last_time": 6.875,
+      "total_actions": 2.0,
+      "changes": 1.0,
+      "unique_choices": 2.0,
+      "target_tags": "1|3",
+      "selected_tags": "4"
+    },
+    "part2": {
+      "sample_id": "LSL-0006",
+      "timestamp": "2026-11-19T17:49:40.275938Z",
+      "session_time": 10.041,
+      "water": 82.111435,
+      "soil": 8.211144,
+      "forest": 0.782014,
+      "flower": 36.656891,
+      "fire": 99.608994,
+      "mineral": 35.679375,
+      "overall": 43.841644,
+      "slider_actions": 9.0,
+      "value_changes": 244.0,
+      "direction_changes": 4.0,
+      "total_travel": 641.348999,
+      "stabilisation_time": 0.876
+    },
+    "part3": {
+      "sample_id": "LSL-0006",
+      "timestamp": "2026-11-19T17:49:55.735502Z",
+      "session_time": 12.642,
+      "grid_cols": 50.0,
+      "grid_rows": 50.0,
+      "total_strokes": 8.0,
+      "total_points": 815.0,
+      "unique_cells": 1413.0,
+      "coverage_ratio": 0.5652,
+      "total_density": 83907.273438,
+      "mean_density": 59.382359,
+      "max_density": 255.0,
+      "revisit_count": 778.0,
+      "dwell_time": 0.293,
+      "path_length": 612.665405,
+      "direction_changes": 178.0,
+      "centroid_x": 0.56974,
+      "centroid_y": 0.654502,
+      "bounding_width": 0.98,
+      "bounding_height": 0.9,
+      "erase_actions": 0.0,
+      "reset_count": 0.0
+    }
+  },
+  "assets": {
+    "pom": "pom_LSL-0006.png",
+    "drawing": "drawing_LSL-0006.png"
+  }
 }

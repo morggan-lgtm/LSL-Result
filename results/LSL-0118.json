@@ -15,7 +15,15 @@
       "aversive"
     ],
     "earth_memory": "Downwind of a hot spring: sulphur vapour hits your face and you hold your breath before you decide to.",
-    "earth_memory_zh_tw": "站在溫泉的下風處：硫磺蒸氣撲面而來，你還來不及思考，就已經屏住呼吸。"
+    "earth_memory_zh_tw": "站在溫泉的下風處：硫磺蒸氣撲面而來，你還來不及思考，就已經屏住呼吸。",
+    "sensory_anchors": [
+      "White steam at Beitou Thermal Valley — the instant the airway tightens",
+      "The half-second after a match is struck",
+      "Heat rising off summer asphalt: hot, dry, nowhere to step back to",
+      "Odourant added to leaking gas — the body reacts before the mind names it"
+    ],
+    "recommended_scent": "Struck match",
+    "display_color": "#C1440E"
   },
   "odour_vector": {
     "volatility": 0.6208,
