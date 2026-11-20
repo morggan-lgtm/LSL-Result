@@ -1,6 +1,6 @@
 {
   "card_id": "LSL-0001",
-  "created_at": "2026-11-19T18:05:30.308841Z",
+  "created_at": "2026-11-19T18:05:30.308Z",
   "planet": {
     "id": "kepler442b",
     "display_name": "Kepler-442 b",
@@ -15,14 +15,14 @@
       "neutral-slightly pleasant"
     ],
     "earth_memory": "A K-dwarf's amber light over a cool oxidised plain: iron-rich clay, a mineral smell that stays low and even.",
-    "earth_memory_zh_tw": "K 型矮星的琥珀色光芒灑在涼冷、氧化的平原上：富含鐵質的黏土散發礦物氣味，低沉而平穩地久久不散。",
+    "earth_memory_zh_tw": "",
     "sensory_anchors": [
       "Damp red clay after rain",
       "Cold iron railings in autumn",
       "A quarry at dusk, dust settling",
       "Old terracotta kept in shade"
     ],
-    "recommended_scent": "Damp iron-rich clay",
+    "recommended_scent": "Wet soil",
     "display_color": "#A0522D"
   },
   "odour_vector": {
@@ -129,7 +129,12 @@
     }
   },
   "assets": {
-    "pom": "pom_LSL-0001.png",
-    "drawing": "drawing_LSL-0001.png"
+    "pom": "pom/LSL-0001.png",
+    "drawing": "drawings/LSL-0001.png"
+  },
+  "source": {
+    "revision": "05f5f33b9ffa8c19fcebdf76bf844543d8e33fccbd5d1be8727b22d3b7c04477",
+    "generation_key": "93b32c9cfc550536efe30613e9c6aea64b6302c484a461661d084e03e8af0b4a",
+    "image_sha256": "f777514fd40ca1318b65d3ab370cb4692fc5728896a976d8bc9b4c56231276f2"
   }
 }

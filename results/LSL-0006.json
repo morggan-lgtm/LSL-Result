@@ -1,6 +1,6 @@
 {
   "card_id": "LSL-0006",
-  "created_at": "2026-11-19T18:08:44.771875Z",
+  "created_at": "2026-11-19T18:08:44.771Z",
   "planet": {
     "id": "hd20794d",
     "display_name": "HD 20794 d",
@@ -15,14 +15,14 @@
       "neutral"
     ],
     "earth_memory": "Ten minutes before a storm: ozone with a metal edge, and the certainty that something is arriving.",
-    "earth_memory_zh_tw": "暴風雨來臨前十分鐘：帶著金屬氣息的臭氧味，讓你確信有什麼正要到來。",
+    "earth_memory_zh_tw": "",
     "sensory_anchors": [
       "Ozone in the nose before a dry seasonal front",
       "The gust a train pushes onto the platform before it arrives",
       "Tasting a cold iron railing in winter",
       "The few days between seasons when the body has not caught up"
     ],
-    "recommended_scent": "Rain on cold metal",
+    "recommended_scent": "Ozonic accord",
     "display_color": "#8B7D6B"
   },
   "odour_vector": {
@@ -129,7 +129,12 @@
     }
   },
   "assets": {
-    "pom": "pom_LSL-0006.png",
-    "drawing": "drawing_LSL-0006.png"
+    "pom": "pom/LSL-0006.png",
+    "drawing": "drawings/LSL-0006.png"
+  },
+  "source": {
+    "revision": "480f6a960fe3bc58341bc2850aebf947db885e82b9f216dc2ee54d6ea0cffb35",
+    "generation_key": "dc18657d47a843f5433c3e3b2ddb49e3031a698f6bbfb7591c30f5efc786edcc",
+    "image_sha256": "d689b1bc69f05f9a2c9a1ba583138a1368f4235f07af97dac3e12469cfc875b3"
   }
 }
