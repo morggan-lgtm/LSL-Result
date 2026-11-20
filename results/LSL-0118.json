@@ -14,7 +14,8 @@
       "fleeting",
       "aversive"
     ],
-    "earth_memory": "Downwind of a hot spring: sulphur vapour hits your face and you hold your breath before you decide to."
+    "earth_memory": "Downwind of a hot spring: sulphur vapour hits your face and you hold your breath before you decide to.",
+    "earth_memory_zh_tw": "站在溫泉的下風處：硫磺蒸氣撲面而來，你還來不及思考，就已經屏住呼吸。"
   },
   "odour_vector": {
     "volatility": 0.6208,
@@ -63,5 +64,6 @@
     }
   ],
   "dialogue": "The pressure builds. A slow darkening of the east.",
+  "dialogue_zh_tw": "壓力逐漸累積。東方緩緩暗了下來。",
   "poster": "posters/LSL-0118.jpg"
 }

@@ -14,7 +14,8 @@
       "fleeting",
       "neutral"
     ],
-    "earth_memory": "Ten minutes before a storm: ozone with a metal edge, and the certainty that something is arriving."
+    "earth_memory": "Ten minutes before a storm: ozone with a metal edge, and the certainty that something is arriving.",
+    "earth_memory_zh_tw": "暴風雨來臨前十分鐘：帶著金屬氣息的臭氧味，讓你確信有什麼正要到來。"
   },
   "odour_vector": {
     "volatility": 0.8638,
