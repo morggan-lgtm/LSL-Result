@@ -13,7 +13,7 @@ participant's own result — scanned later on their own phone.
 ## 網址格式 / URL format
 
 ```
-https://morggan-lgtm.github.io/lsl-result/?c=LSL-0118
+https://morggan-lgtm.github.io/LSL-Result/?c=LSL-0118
 ```
 
 用查詢字串而不是 `/r/LSL-0118`，因為 GitHub Pages 是純靜態主機，沒有伺服器端路由。

@@ -202,7 +202,8 @@ body{
   // (本機預覽、或 raw 擋掉時都還能運作)。
   // RAW_BASE lets the page bypass the Pages build delay — raw is available
   // almost immediately after a push. Falls back to the relative path.
-  const RAW_BASE = "https://raw.githubusercontent.com/morggan-lgtm/lsl-result/main";
+  // ⚠️ repo 名稱大小寫必須與 GitHub 上完全一致(LSL-Result,不是 lsl-result)
+  const RAW_BASE = "https://raw.githubusercontent.com/morggan-lgtm/LSL-Result/main";
   const RETRY_MS = 15000;
 
   const AXES = ["volatility", "chemistry", "intensity", "valence", "persistence"];
