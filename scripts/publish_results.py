@@ -106,7 +106,9 @@ def publish_git(repo: Path) -> bool:
     run_git("add", "--", "results", "posters", "pom", "drawings", repo=repo)
     staged = run_git("diff", "--cached", "--name-only", repo=repo).stdout.strip()
     if staged:
-        run_git("commit", "-m", "Publish completed LSL participant results", repo=repo)
+        run_git("-c", "user.name=morggan-lgtm",
+                "-c", "user.email=morggan-lgtm@users.noreply.github.com",
+                "commit", "-m", "Publish completed LSL participant results", repo=repo)
     ahead = int(run_git("rev-list", "--count", "origin/main..HEAD", repo=repo).stdout.strip())
     if not ahead:
         return False
@@ -143,7 +145,6 @@ def make_result(session: dict, source_root: Path, repo: Path) -> bool:
         print(f"Skip {card}: incomplete TUI stations", file=sys.stderr)
         return False
 
-    tui_root = source_root / "LSL-M1" / "tui_runtime"
     image = inside(Path(m5["image_path"]), source_root)
     pom = inside(Path(session["pom_path"]), source_root)
     drawing = inside(source_root / "TUI_Processing_v5" / "collected_data" /
