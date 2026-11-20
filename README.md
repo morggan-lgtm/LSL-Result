@@ -24,7 +24,7 @@ The three current registered TUI records are LSL-0001, LSL-0005, and LSL-0006. L
 
 Current TUI station data, POMs, and drawings were taken from the corresponding LSL card sessions in the main AI-Agent project. Planet scent references and suggested scent labels follow the M0 planet archive and M6 participant journey. Classification weights and generated poster images are the result files previously published for each card.
 
-The result page first checks the GitHub raw file endpoint so newly committed results can appear before GitHub Pages rebuilds. It then falls back to the Pages-relative JSON path. On localhost it reads local JSON first for testing.
+The result page checks the Pages-relative JSON first for a fast same-origin request, then falls back to the GitHub raw file endpoint when Pages has not yet published a newly committed result. The Part 1 descriptions are concrete smell examples associated with the recorded TUI choices; the workbook records choice names, not the physical sample ingredients.
 
 ## Privacy
 

@@ -114,18 +114,18 @@ a{color:inherit}
 <div class="record-head"><div class="kicker">VISITOR TRAINING RECORD / <span id="record-card"></span></div><h1>Your scent journey</h1><p>Three TUI stations, one personal odour map, and a planetary match.</p></div>
 <section class="hero" aria-label="Planetary assignment">
 <div class="poster" id="poster-frame"><img id="poster-img" alt=""><div class="poster-meta"><span>LSL / PLANETARY RECORD</span><b id="poster-signal"></b></div><div class="poster-vertical" id="poster-planet-vertical"></div><div class="poster-bottom"><small>TRAINING SPECIMEN</small><strong id="poster-card"></strong><em id="poster-planet"></em><div class="poster-scoreline" id="poster-scoreline"></div></div></div>
-<div class="hero-copy"><div><div class="kicker">03 / PLANETARY ASSIGNMENT</div><h2 class="match" id="hero-planet"></h2><div class="match-percent" id="hero-score"></div><p class="memory" id="hero-memory"></p></div><div><div class="hero-mini"><div><small>Familiar smell selected</small><strong id="hero-familiar">—</strong></div><div><small>Suggested scent</small><strong id="hero-scent">—</strong></div></div><p class="intro-line">The planet's scent is a design interpretation, not a measured atmospheric odour. The match score is the model's allocation weight.</p></div></div>
+<div class="hero-copy"><div><div class="kicker">03 / PLANETARY ASSIGNMENT</div><h2 class="match" id="hero-planet"></h2><div class="match-percent" id="hero-score"></div><p class="memory" id="hero-memory"></p></div><div class="hero-mini"><div><small>Your familiar scent</small><strong id="hero-familiar">—</strong></div><div><small>Planet scent reference</small><strong id="hero-scent">—</strong></div></div></div>
 </section>
 <div class="section-head"><span class="section-index">01 / INPUT</span><h2>TUI training record</h2></div>
 <div class="grid3">
-<section class="panel"><div class="micro">PART 1 / RECOGNITION</div><h3>Familiar smell</h3><div class="selected-smell" id="part1-input">—</div><p>The smell chosen at the first station.</p><div class="metric-list" id="part1-metrics"></div></section>
+<section class="panel"><div class="micro">PART 1 / RECOGNITION</div><h3>Your familiar scent</h3><div class="selected-smell" id="part1-input">—</div><p id="part1-source">Your first station selection.</p><div class="metric-list" id="part1-metrics"></div></section>
 <section class="panel"><div class="micro">PART 2 / REGULATION</div><h3>Element adjustments</h3><div id="part2-elements"></div><div class="metric-list" id="part2-metrics"></div></section>
 <section class="panel"><div class="micro">PART 3 / DRAWING</div><h3>Your drawing</h3><a class="asset-link hidden" id="drawing-link" target="_blank" rel="noopener" aria-label="Open the original Part 3 drawing"><img class="drawing" id="drawing-img" alt="Participant drawing made in Part 3"></a><p id="drawing-note" class="hidden">The original Part 3 drawing is unavailable for this record.</p><div class="metric-list" id="part3-metrics"></div></section>
 </div>
 <div class="section-head"><span class="section-index">02 / INTERPRETATION</span><h2>Odour correspondence</h2></div>
 <div class="interpret-grid">
 <section class="panel"><div class="micro">PERSONAL ODOUR MAP / POM</div><h3>Your position in the scent field</h3><a class="asset-link hidden" id="pom-link" target="_blank" rel="noopener" aria-label="Open the full-size personal odour map"><img class="pom-image" id="pom-img" alt="Personal odour map showing the participant and six planet regions"></a><p id="pom-note" class="hidden">The personal odour map is unavailable for this record.</p><p class="note">The POM is a model display of the participant and six planet regions. Tap the image to view it full size.</p></section>
-<section class="panel"><div class="micro">FIVE-AXIS PROFILE / 0–1</div><h3>Visitor and planet</h3><div id="axis-rows"></div><p class="note">Planet odour values are inferred from project rules. They are not measured planetary smells or a causal explanation of the match.</p><div class="micro" style="margin-top:28px">SCENT REFERENCE / DESIGN INTERPRETATION</div><p class="scent-main" id="scent-main"></p><p id="scent-memory"></p><div class="micro" style="margin-top:22px">FAMILIAR EARTH REFERENCES</div><ul class="anchor-list" id="scent-anchors"></ul></section>
+<section class="panel"><div class="micro">FIVE-AXIS PROFILE / 0–1</div><h3>Visitor and planet</h3><div id="axis-rows"></div><div class="micro" style="margin-top:28px">PLANET SCENT REFERENCE</div><p class="scent-main" id="scent-main"></p><p id="scent-memory"></p><div class="micro" style="margin-top:22px">SPECIFIC EARTH SCENTS</div><ul class="anchor-list" id="scent-anchors"></ul></section>
 </div>
 <div class="section-head"><span class="section-index">03 / ASSIGNMENT</span><h2>Planetary allocation</h2></div>
 <div class="grid2">
@@ -141,6 +141,11 @@ a{color:inherit}
 var RAW_BASE="https://raw.githubusercontent.com/morggan-lgtm/LSL-Result/main";
 var RETRY_MS=15000,MAX_ATTEMPTS=20,attempts=0,timer=null,countdown=15;
 var AXES=["volatility","chemistry","intensity","valence","persistence"];
+var FAMILIAR_SCENTS={"THUNDERSTORM":"Rain on wet pavement","SMOKING":"Cigarette smoke","CAT URINE":"Cat urine / ammonia","CORRUPTION":"Rotting organic matter","CHEMICAL SUBSTANCES":"Sharp cleaning chemicals"};
+var PLANET_SCENTS={"Damp iron-rich clay":"Wet red clay after rain","Rain on cold metal":"Rain on an iron railing","Struck match":"A freshly struck match"};
+var EARTH_SCENTS={"kepler442b":["Wet red clay after rain","An iron railing wet with rain","Dry stone dust at a quarry","A damp terracotta pot"],"gj887b":["Sulphur steam at a hot spring","A freshly struck match","Hot asphalt on a summer day","The added odour in leaking gas"],"hd20794d":["Ozone before a thunderstorm","Rainwater on a cold iron railing","Cold metal on the tongue"]};
+function familiarScent(value){return FAMILIAR_SCENTS[String(value||"").toUpperCase()]||value||"No station record"}
+function planetScent(value){return PLANET_SCENTS[value]||value||"Not recorded"}
 var $=function(id){return document.getElementById(id)};
 var query=new URLSearchParams(location.search);
 var card=(query.get("c")||query.get("card")||"").trim().toUpperCase();
@@ -168,8 +173,8 @@ async function fetchResult(url){try{var r=await fetch(url,{cache:"no-store"});if
 async function load(){
  var path="results/"+card+".json",bust="?t="+Date.now();
  var local=location.hostname==="127.0.0.1"||location.hostname==="localhost";
- var data=await fetchResult(local?path+bust:RAW_BASE+"/"+path+bust);
- if(!data)data=await fetchResult(local?RAW_BASE+"/"+path+bust:path+bust);
+ var data=await fetchResult(path+bust);
+ if(!data)data=await fetchResult(RAW_BASE+"/"+path+bust);
  if(data&&data.card_id===card){if(timer)clearInterval(timer);render(data)}else pending()
 }
 function setText(id,value){$(id).textContent=value===undefined||value===null||value===""?"—":String(value)}
@@ -184,13 +189,14 @@ function render(d){
  setText("hero-score",num(pct,1)+"% MATCH");
  setText("poster-signal","SIGNAL "+num(pct,1)+"%");
  setText("hero-memory",p.earth_memory||"No planet scent description is available.");
- setText("hero-familiar",part1.input||"No station record");
- setText("hero-scent",p.recommended_scent||"Not recorded");
+ setText("hero-familiar",familiarScent(part1.input));
+ setText("hero-scent",planetScent(p.recommended_scent));
  var poster=$("poster-img");
  if(d.poster){poster.src=d.poster;poster.alt="Generated poster for "+card+" and "+(p.display_name||p.id);poster.onerror=function(){$("poster-frame").classList.add("hidden")}}else $("poster-frame").classList.add("hidden");
  var posterLine=$("poster-scoreline");posterLine.textContent="";
  (d.scores||[]).slice().sort(function(a,b){return b.p-a.p}).forEach(function(s){var segment=add(posterLine,"span");var line=add(segment,"i");line.style.width=Math.max(0,Math.min(100,Number(s.p||0)*100))+"%"});
- setText("part1-input",part1.input||"No station record");
+ setText("part1-input",familiarScent(part1.input));
+ setText("part1-source",part1.input?"TUI selection: "+part1.input:"No first station selection is recorded.");
  var m1=$("part1-metrics");m1.textContent="";
  if(part1.input){metric(m1,"Total actions",num(part1.total_actions,0));metric(m1,"Changes",num(part1.changes,0));metric(m1,"Unique choices",num(part1.unique_choices,0));metric(m1,"Last response",num(part1.last_time,2)+" s")}else metric(m1,"Record","Not available");
  var elements=$("part2-elements");elements.textContent="";
@@ -207,10 +213,10 @@ function render(d){
  var axes=$("axis-rows");axes.textContent="";
  var head=add(axes,"div","axis-row header");add(head,"span","","AXIS");add(head,"b","","VISITOR");add(head,"b","","PLANET");
  AXES.forEach(function(key){var row=add(axes,"div","axis-row");add(row,"span","",key.toUpperCase());add(row,"b","",num((d.odour_vector||{})[key],3));add(row,"b","",num((d.planet_vector||{})[key],3))});
- setText("scent-main",p.recommended_scent||"Scent not available");
+ setText("scent-main",planetScent(p.recommended_scent));
  setText("scent-memory",p.earth_memory||"No scent correspondence is available.");
  var anchors=$("scent-anchors");anchors.textContent="";
- (p.sensory_anchors||[]).forEach(function(a){add(anchors,"li","",a)});
+ (EARTH_SCENTS[p.id]||p.sensory_anchors||[]).forEach(function(a){add(anchors,"li","",a)});
  if(!anchors.children.length)add(anchors,"li","","No Earth scent references are recorded.");
  var scores=$("score-rows");scores.textContent="";
  (d.scores||[]).slice().sort(function(a,b){return b.p-a.p}).forEach(function(s){var row=add(scores,"div","score-row");add(row,"span","score-name",s.display_name||s.planet_id);add(row,"strong","score-value",num(Number(s.p||0)*100,1)+"%");var track=add(row,"span","score-track");var bar=add(track,"i");bar.style.width=Math.max(0,Math.min(100,Number(s.p||0)*100))+"%"});
