@@ -1,0 +1,67 @@
+{
+  "card_id": "LSL-0001",
+  "created_at": "2026-11-19T18:05:30.308841Z",
+  "planet": {
+    "id": "kepler442b",
+    "display_name": "Kepler-442 b",
+    "star_class": "K5V",
+    "teq_k": 233,
+    "mass_earth": 2.36,
+    "tidally_locked": false,
+    "descriptors": [
+      "mineral / oxidised iron / cold clay",
+      "moderate",
+      "lingering",
+      "neutral-slightly pleasant"
+    ],
+    "earth_memory": "A K-dwarf's amber light over a cool oxidised plain: iron-rich clay, a mineral smell that stays low and even."
+  },
+  "odour_vector": {
+    "volatility": 0.2532,
+    "chemistry": 0.2791,
+    "intensity": 0.2384,
+    "valence": 0.5657,
+    "persistence": 0.358
+  },
+  "planet_vector": {
+    "volatility": 0.144,
+    "chemistry": 0.539,
+    "intensity": 0.173,
+    "valence": 0.609,
+    "persistence": 0.475
+  },
+  "scores": [
+    {
+      "planet_id": "gj887b",
+      "display_name": "GJ 887 b",
+      "p": 0.0678
+    },
+    {
+      "planet_id": "hd20794d",
+      "display_name": "HD 20794 d",
+      "p": 0.0665
+    },
+    {
+      "planet_id": "kepler22b",
+      "display_name": "Kepler-22 b",
+      "p": 0.039
+    },
+    {
+      "planet_id": "kepler442b",
+      "display_name": "Kepler-442 b",
+      "p": 0.4954
+    },
+    {
+      "planet_id": "taucetf",
+      "display_name": "tau Cet f",
+      "p": 0.085
+    },
+    {
+      "planet_id": "toi715b",
+      "display_name": "TOI-715 b",
+      "p": 0.2463
+    }
+  ],
+  "dialogue": "",
+  "poster": "posters/LSL-0001.jpg"
+}

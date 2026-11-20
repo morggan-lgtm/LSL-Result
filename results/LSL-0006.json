@@ -1,0 +1,67 @@
+{
+  "card_id": "LSL-0006",
+  "created_at": "2026-11-19T18:08:44.771875Z",
+  "planet": {
+    "id": "hd20794d",
+    "display_name": "HD 20794 d",
+    "star_class": "G8V",
+    "teq_k": 388,
+    "mass_earth": 2.98,
+    "tidally_locked": false,
+    "descriptors": [
+      "cold air / ozone / metal",
+      "moderate, legible",
+      "fleeting",
+      "neutral"
+    ],
+    "earth_memory": "Ten minutes before a storm: ozone with a metal edge, and the certainty that something is arriving."
+  },
+  "odour_vector": {
+    "volatility": 0.8638,
+    "chemistry": 0.4771,
+    "intensity": 0.5408,
+    "valence": 0.6069,
+    "persistence": 0.6662
+  },
+  "planet_vector": {
+    "volatility": 0.651,
+    "chemistry": 0.923,
+    "intensity": 0.539,
+    "valence": 0.512,
+    "persistence": 0.315
+  },
+  "scores": [
+    {
+      "planet_id": "gj887b",
+      "display_name": "GJ 887 b",
+      "p": 0.271
+    },
+    {
+      "planet_id": "hd20794d",
+      "display_name": "HD 20794 d",
+      "p": 0.3298
+    },
+    {
+      "planet_id": "kepler22b",
+      "display_name": "Kepler-22 b",
+      "p": 0.1306
+    },
+    {
+      "planet_id": "kepler442b",
+      "display_name": "Kepler-442 b",
+      "p": 0.1371
+    },
+    {
+      "planet_id": "taucetf",
+      "display_name": "tau Cet f",
+      "p": 0.062
+    },
+    {
+      "planet_id": "toi715b",
+      "display_name": "TOI-715 b",
+      "p": 0.0695
+    }
+  ],
+  "dialogue": "",
+  "poster": "posters/LSL-0006.jpg"
+}

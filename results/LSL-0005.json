@@ -1,0 +1,67 @@
+{
+  "card_id": "LSL-0005",
+  "created_at": "2026-11-19T17:13:49.963735Z",
+  "planet": {
+    "id": "gj887b",
+    "display_name": "GJ 887 b",
+    "star_class": "M2V",
+    "teq_k": 426,
+    "mass_earth": 3.9,
+    "tidally_locked": true,
+    "descriptors": [
+      "sulphurous / struck match / onsen egg",
+      "pungent, oppressive",
+      "fleeting",
+      "aversive"
+    ],
+    "earth_memory": "Downwind of a hot spring: sulphur vapour hits your face and you hold your breath before you decide to."
+  },
+  "odour_vector": {
+    "volatility": 1.0,
+    "chemistry": 0.3504,
+    "intensity": 0.6987,
+    "valence": 0.3528,
+    "persistence": 0.5743
+  },
+  "planet_vector": {
+    "volatility": 0.756,
+    "chemistry": 0.265,
+    "intensity": 0.66,
+    "valence": 0.087,
+    "persistence": 0.353
+  },
+  "scores": [
+    {
+      "planet_id": "gj887b",
+      "display_name": "GJ 887 b",
+      "p": 0.6491
+    },
+    {
+      "planet_id": "hd20794d",
+      "display_name": "HD 20794 d",
+      "p": 0.1805
+    },
+    {
+      "planet_id": "kepler22b",
+      "display_name": "Kepler-22 b",
+      "p": 0.04
+    },
+    {
+      "planet_id": "kepler442b",
+      "display_name": "Kepler-442 b",
+      "p": 0.0533
+    },
+    {
+      "planet_id": "taucetf",
+      "display_name": "tau Cet f",
+      "p": 0.0211
+    },
+    {
+      "planet_id": "toi715b",
+      "display_name": "TOI-715 b",
+      "p": 0.0559
+    }
+  ],
+  "dialogue": "",
+  "poster": "posters/LSL-0005.jpg"
+}
