@@ -1,6 +1,6 @@
 {
   "card_id": "LSL-0001",
-  "created_at": "2026-11-19T18:05:30.308Z",
+  "created_at": "2026-11-24T17:16:26.599Z",
   "planet": {
     "id": "kepler442b",
     "display_name": "Kepler-442 b",
@@ -134,7 +134,7 @@
   },
   "source": {
     "revision": "05f5f33b9ffa8c19fcebdf76bf844543d8e33fccbd5d1be8727b22d3b7c04477",
-    "generation_key": "93b32c9cfc550536efe30613e9c6aea64b6302c484a461661d084e03e8af0b4a",
-    "image_sha256": "f777514fd40ca1318b65d3ab370cb4692fc5728896a976d8bc9b4c56231276f2"
+    "generation_key": "c45821238b89fad058ee1fe4bc3616268e330c1cdf81a83b74a207795832245b",
+    "image_sha256": "3d9b295faa72c0a8dc6b43e4fe50d0f1dddcafa85fc2a15c6937aec7e1a6a895"
   }
 }

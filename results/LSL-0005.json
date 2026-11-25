@@ -1,6 +1,6 @@
 {
   "card_id": "LSL-0005",
-  "created_at": "2026-11-19T17:13:49.963Z",
+  "created_at": "2026-11-24T14:17:03.572Z",
   "planet": {
     "id": "gj887b",
     "display_name": "GJ 887 b",
@@ -134,7 +134,7 @@
   },
   "source": {
     "revision": "a3e4cd28917731869ef08e818b27d7d4e3b47c1ff332c0b95b0f39cb4828d6b5",
-    "generation_key": "85739b2ac67b91b6916b3b4fd197658c089aa58072a8093e40572ee560816a09",
-    "image_sha256": "30cccab2b6838aad88d17cb6db91a6f3ca2a2051d9c7718e764e204bdc9d460a"
+    "generation_key": "53b6098953b03a8242d559fba800e04594c1059abb95dda7f7643be1b75d723f",
+    "image_sha256": "f2b65f1158e51dd0f658b8b76f01d5fb6c04043cb810788e0acadc943583d2d1"
   }
 }

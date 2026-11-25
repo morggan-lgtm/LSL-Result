@@ -1,6 +1,6 @@
 {
   "card_id": "LSL-0006",
-  "created_at": "2026-11-19T18:08:44.771Z",
+  "created_at": "2026-11-24T14:52:25.366Z",
   "planet": {
     "id": "hd20794d",
     "display_name": "HD 20794 d",
@@ -134,7 +134,7 @@
   },
   "source": {
     "revision": "480f6a960fe3bc58341bc2850aebf947db885e82b9f216dc2ee54d6ea0cffb35",
-    "generation_key": "dc18657d47a843f5433c3e3b2ddb49e3031a698f6bbfb7591c30f5efc786edcc",
-    "image_sha256": "d689b1bc69f05f9a2c9a1ba583138a1368f4235f07af97dac3e12469cfc875b3"
+    "generation_key": "13f601dceb0165a4616a5e580351a78a6e329e814f8f4f5410bf0d88b121b176",
+    "image_sha256": "f6bc579db4a9fc06d5387956cf390b1a8dc45937422ed2370fbdf1b8916c8b0d"
   }
 }
