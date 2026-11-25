@@ -1,0 +1,140 @@
+{
+  "card_id": "LSL-0007",
+  "created_at": "2026-11-25T12:18:27.612Z",
+  "planet": {
+    "id": "toi715b",
+    "display_name": "TOI-715 b",
+    "star_class": "M4V",
+    "teq_k": 234,
+    "mass_earth": 3.02,
+    "tidally_locked": true,
+    "descriptors": [
+      "sulphurous / struck match / onsen egg",
+      "faint, near-odourless",
+      "fleeting",
+      "aversive"
+    ],
+    "earth_memory": "A frozen hot spring: the sulphur is still there, locked under the cold, and it only seeps out if you lean in.",
+    "earth_memory_zh_tw": "",
+    "sensory_anchors": [
+      "A cold onsen egg the moment the shell breaks",
+      "An unventilated basement — damp concrete and rust",
+      "Winter breath that hangs in front of you instead of dispersing",
+      "The stillness after snow stops, when every smell has been drawn out of the air"
+    ],
+    "recommended_scent": "",
+    "display_color": "#B0304A"
+  },
+  "odour_vector": {
+    "volatility": 0.3148,
+    "chemistry": 0.2733,
+    "intensity": 0.282,
+    "valence": 0.3855,
+    "persistence": 0.4733
+  },
+  "planet_vector": {
+    "volatility": 0.145,
+    "chemistry": 0.029,
+    "intensity": 0.212,
+    "valence": 0.202,
+    "persistence": 0.539
+  },
+  "scores": [
+    {
+      "planet_id": "gj887b",
+      "display_name": "GJ 887 b",
+      "p": 0.1146
+    },
+    {
+      "planet_id": "hd20794d",
+      "display_name": "HD 20794 d",
+      "p": 0.0662
+    },
+    {
+      "planet_id": "kepler22b",
+      "display_name": "Kepler-22 b",
+      "p": 0.037
+    },
+    {
+      "planet_id": "kepler442b",
+      "display_name": "Kepler-442 b",
+      "p": 0.327
+    },
+    {
+      "planet_id": "taucetf",
+      "display_name": "tau Cet f",
+      "p": 0.0723
+    },
+    {
+      "planet_id": "toi715b",
+      "display_name": "TOI-715 b",
+      "p": 0.383
+    }
+  ],
+  "dialogue": "",
+  "poster": "posters/LSL-0007.jpg",
+  "tui": {
+    "part1": {
+      "sample_id": "LSL-0007",
+      "timestamp": "2026-11-25T15:19:35.203517Z",
+      "input": "CHEMICAL SUBSTANCES",
+      "count": 2.0,
+      "last_time": 242.871994,
+      "total_actions": 2.0,
+      "changes": 1.0,
+      "unique_choices": 2.0,
+      "target_tags": "1|3",
+      "selected_tags": "5"
+    },
+    "part2": {
+      "sample_id": "LSL-0007",
+      "timestamp": "2026-11-25T15:19:41.791781Z",
+      "session_time": 2.522,
+      "water": 9.677419,
+      "soil": 99.804497,
+      "forest": 42.326492,
+      "flower": 0.0,
+      "fire": 40.860214,
+      "mineral": 10.459433,
+      "overall": 33.854675,
+      "slider_actions": 7.0,
+      "value_changes": 111.0,
+      "direction_changes": 0.0,
+      "total_travel": 194.428162,
+      "stabilisation_time": 0.025
+    },
+    "part3": {
+      "sample_id": "LSL-0007",
+      "timestamp": "2026-11-25T15:19:55.751883Z",
+      "session_time": 169.576996,
+      "grid_cols": 50.0,
+      "grid_rows": 50.0,
+      "total_strokes": 5.0,
+      "total_points": 216.0,
+      "unique_cells": 938.0,
+      "coverage_ratio": 0.3752,
+      "total_density": 22484.017578,
+      "mean_density": 23.970167,
+      "max_density": 104.0,
+      "revisit_count": 167.0,
+      "dwell_time": 1.112,
+      "path_length": 373.407257,
+      "direction_changes": 45.0,
+      "centroid_x": 0.557308,
+      "centroid_y": 0.535504,
+      "bounding_width": 0.86,
+      "bounding_height": 0.82,
+      "erase_actions": 0.0,
+      "reset_count": 0.0
+    }
+  },
+  "assets": {
+    "pom": "pom/LSL-0007.png",
+    "drawing": "drawings/LSL-0007.png"
+  },
+  "source": {
+    "revision": "421ce0a60af3c3bdaf285a366cb17824859ea22a0d90d8c63e7e14747a845e5a",
+    "generation_key": "6e8fe0653bbf5ef9e4c0a290fddf9a581f084e691ce26e351fb53de20e5a158e",
+    "image_sha256": "5ac818e6fae48e81e99313accad4cfe86b22b4ef66975743a20dd279add38ef9"
+  }
+}
