@@ -1,0 +1,140 @@
+{
+  "card_id": "LSL-0131",
+  "created_at": "2026-11-24T14:43:09.880Z",
+  "planet": {
+    "id": "gj887b",
+    "display_name": "GJ 887 b",
+    "star_class": "M2V",
+    "teq_k": 426,
+    "mass_earth": 3.9,
+    "tidally_locked": true,
+    "descriptors": [
+      "sulphurous / struck match / onsen egg",
+      "pungent, oppressive",
+      "fleeting",
+      "aversive"
+    ],
+    "earth_memory": "Downwind of a hot spring: sulphur vapour hits your face and you hold your breath before you decide to.",
+    "earth_memory_zh_tw": "",
+    "sensory_anchors": [
+      "White steam at Beitou Thermal Valley — the instant the airway tightens",
+      "The half-second after a match is struck",
+      "Heat rising off summer asphalt: hot, dry, nowhere to step back to",
+      "Odourant added to leaking gas — the body reacts before the mind names it"
+    ],
+    "recommended_scent": "Rotten egg",
+    "display_color": "#C1440E"
+  },
+  "odour_vector": {
+    "volatility": 0.5565,
+    "chemistry": 0.2378,
+    "intensity": 0.4632,
+    "valence": 0.3847,
+    "persistence": 0.5855
+  },
+  "planet_vector": {
+    "volatility": 0.756,
+    "chemistry": 0.265,
+    "intensity": 0.66,
+    "valence": 0.087,
+    "persistence": 0.353
+  },
+  "scores": [
+    {
+      "planet_id": "gj887b",
+      "display_name": "GJ 887 b",
+      "p": 0.3533
+    },
+    {
+      "planet_id": "hd20794d",
+      "display_name": "HD 20794 d",
+      "p": 0.1125
+    },
+    {
+      "planet_id": "kepler22b",
+      "display_name": "Kepler-22 b",
+      "p": 0.0514
+    },
+    {
+      "planet_id": "kepler442b",
+      "display_name": "Kepler-442 b",
+      "p": 0.181
+    },
+    {
+      "planet_id": "taucetf",
+      "display_name": "tau Cet f",
+      "p": 0.0523
+    },
+    {
+      "planet_id": "toi715b",
+      "display_name": "TOI-715 b",
+      "p": 0.2495
+    }
+  ],
+  "dialogue": "",
+  "poster": "posters/LSL-0131.jpg",
+  "tui": {
+    "part1": {
+      "sample_id": "LSL-0131",
+      "timestamp": "2026-11-25T17:32:12.422366Z",
+      "input": "SMOKING",
+      "count": 2.0,
+      "last_time": 15.075,
+      "total_actions": 2.0,
+      "changes": 1.0,
+      "unique_choices": 2.0,
+      "target_tags": "1|3",
+      "selected_tags": "4"
+    },
+    "part2": {
+      "sample_id": "LSL-0131",
+      "timestamp": "2026-11-25T17:32:27.643873Z",
+      "session_time": 11.384,
+      "water": 0.293255,
+      "soil": 60.801567,
+      "forest": 41.348972,
+      "flower": 10.85044,
+      "fire": 25.904202,
+      "mineral": 84.750732,
+      "overall": 37.324863,
+      "slider_actions": 5.0,
+      "value_changes": 216.0,
+      "direction_changes": 7.0,
+      "total_travel": 445.845581,
+      "stabilisation_time": 1.048
+    },
+    "part3": {
+      "sample_id": "LSL-0131",
+      "timestamp": "2026-11-25T17:32:51.517153Z",
+      "session_time": 19.09,
+      "grid_cols": 50.0,
+      "grid_rows": 50.0,
+      "total_strokes": 1.0,
+      "total_points": 1247.0,
+      "unique_cells": 893.0,
+      "coverage_ratio": 0.3572,
+      "total_density": 45944.558594,
+      "mean_density": 51.449673,
+      "max_density": 255.0,
+      "revisit_count": 1202.0,
+      "dwell_time": 2.326,
+      "path_length": 432.891052,
+      "direction_changes": 208.0,
+      "centroid_x": 0.579684,
+      "centroid_y": 0.411711,
+      "bounding_width": 0.88,
+      "bounding_height": 0.88,
+      "erase_actions": 0.0,
+      "reset_count": 0.0
+    }
+  },
+  "assets": {
+    "pom": "pom/LSL-0131.png",
+    "drawing": "drawings/LSL-0131.png"
+  },
+  "source": {
+    "revision": "0a99ce4aec633f86fca587bc85e2e01e6111f642aea5b9d2f712981df8b3888b",
+    "generation_key": "734ade3a66b8c5b29fbc87905fa480154ee0e9c7e54ee883a2326559699daed3",
+    "image_sha256": "015476f28f64c69b55ab19b527e14b81fe0e1c18ad659bd131fddfaf241fd974"
+  }
+}
