@@ -27,7 +27,7 @@
   },
   "odour_vector": {
     "volatility": 0.2532,
-    "chemistry": 0.2791,
+    "chemistry": 0.2922,
     "intensity": 0.2384,
     "valence": 0.5657,
     "persistence": 0.3906
@@ -43,32 +43,32 @@
     {
       "planet_id": "gj887b",
       "display_name": "GJ 887 b",
-      "p": 0.065
+      "p": 0.0634
     },
     {
       "planet_id": "hd20794d",
       "display_name": "HD 20794 d",
-      "p": 0.0634
+      "p": 0.0645
     },
     {
       "planet_id": "kepler22b",
       "display_name": "Kepler-22 b",
-      "p": 0.0402
+      "p": 0.0409
     },
     {
       "planet_id": "kepler442b",
       "display_name": "Kepler-442 b",
-      "p": 0.4973
+      "p": 0.5078
     },
     {
       "planet_id": "taucetf",
       "display_name": "tau Cet f",
-      "p": 0.0865
+      "p": 0.0882
     },
     {
       "planet_id": "toi715b",
       "display_name": "TOI-715 b",
-      "p": 0.2477
+      "p": 0.2352
     }
   ],
   "dialogue": "",
@@ -133,7 +133,7 @@
     "drawing": "drawings/LSL-0001.png"
   },
   "source": {
-    "revision": "5851c273e244c6d0ec838a5dc6e807756fb6da519ebeb6ddfd5cddbe3be59d30",
+    "revision": "9aeb1b12b29d9b93e965f399fd5360862885df7e0f42ae1269a8d7a792042fe5",
     "generation_key": "c45821238b89fad058ee1fe4bc3616268e330c1cdf81a83b74a207795832245b",
     "image_sha256": "3d9b295faa72c0a8dc6b43e4fe50d0f1dddcafa85fc2a15c6937aec7e1a6a895"
   }

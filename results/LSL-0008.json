@@ -1,0 +1,140 @@
+{
+  "card_id": "LSL-0008",
+  "created_at": "2026-11-24T14:19:03.632Z",
+  "planet": {
+    "id": "gj887b",
+    "display_name": "GJ 887 b",
+    "star_class": "M2V",
+    "teq_k": 426,
+    "mass_earth": 3.9,
+    "tidally_locked": true,
+    "descriptors": [
+      "sulphurous / struck match / onsen egg",
+      "pungent, oppressive",
+      "fleeting",
+      "aversive"
+    ],
+    "earth_memory": "Downwind of a hot spring: sulphur vapour hits your face and you hold your breath before you decide to.",
+    "earth_memory_zh_tw": "",
+    "sensory_anchors": [
+      "White steam at Beitou Thermal Valley — the instant the airway tightens",
+      "The half-second after a match is struck",
+      "Heat rising off summer asphalt: hot, dry, nowhere to step back to",
+      "Odourant added to leaking gas — the body reacts before the mind names it"
+    ],
+    "recommended_scent": "Rotten egg",
+    "display_color": "#C1440E"
+  },
+  "odour_vector": {
+    "volatility": 0.9513,
+    "chemistry": 0.2273,
+    "intensity": 0.719,
+    "valence": 0.556,
+    "persistence": 0.4239
+  },
+  "planet_vector": {
+    "volatility": 0.756,
+    "chemistry": 0.265,
+    "intensity": 0.66,
+    "valence": 0.087,
+    "persistence": 0.353
+  },
+  "scores": [
+    {
+      "planet_id": "gj887b",
+      "display_name": "GJ 887 b",
+      "p": 0.5855
+    },
+    {
+      "planet_id": "hd20794d",
+      "display_name": "HD 20794 d",
+      "p": 0.1989
+    },
+    {
+      "planet_id": "kepler22b",
+      "display_name": "Kepler-22 b",
+      "p": 0.043
+    },
+    {
+      "planet_id": "kepler442b",
+      "display_name": "Kepler-442 b",
+      "p": 0.0767
+    },
+    {
+      "planet_id": "taucetf",
+      "display_name": "tau Cet f",
+      "p": 0.0239
+    },
+    {
+      "planet_id": "toi715b",
+      "display_name": "TOI-715 b",
+      "p": 0.072
+    }
+  ],
+  "dialogue": "",
+  "poster": "posters/LSL-0008.jpg",
+  "tui": {
+    "part1": {
+      "sample_id": "LSL-0008",
+      "timestamp": "2026-11-25T16:13:20.086294Z",
+      "input": "CHEMICAL SUBSTANCES",
+      "count": 3.0,
+      "last_time": 10.546,
+      "total_actions": 3.0,
+      "changes": 2.0,
+      "unique_choices": 3.0,
+      "target_tags": "1|3",
+      "selected_tags": "5"
+    },
+    "part2": {
+      "sample_id": "LSL-0008",
+      "timestamp": "2026-11-25T16:13:36.597799Z",
+      "session_time": 14.178,
+      "water": 51.319649,
+      "soil": 99.804497,
+      "forest": 27.565983,
+      "flower": 54.838711,
+      "fire": 10.068426,
+      "mineral": 75.562073,
+      "overall": 53.193222,
+      "slider_actions": 12.0,
+      "value_changes": 201.0,
+      "direction_changes": 3.0,
+      "total_travel": 570.772156,
+      "stabilisation_time": 0.849
+    },
+    "part3": {
+      "sample_id": "LSL-0008",
+      "timestamp": "2026-11-25T16:13:53.968842Z",
+      "session_time": 14.451,
+      "grid_cols": 50.0,
+      "grid_rows": 50.0,
+      "total_strokes": 7.0,
+      "total_points": 599.0,
+      "unique_cells": 1048.0,
+      "coverage_ratio": 0.4192,
+      "total_density": 40116.734375,
+      "mean_density": 38.279327,
+      "max_density": 216.521988,
+      "revisit_count": 580.0,
+      "dwell_time": 0.575,
+      "path_length": 400.771088,
+      "direction_changes": 164.0,
+      "centroid_x": 0.476354,
+      "centroid_y": 0.475508,
+      "bounding_width": 0.96,
+      "bounding_height": 1.0,
+      "erase_actions": 0.0,
+      "reset_count": 1.0
+    }
+  },
+  "assets": {
+    "pom": "pom/LSL-0008.png",
+    "drawing": "drawings/LSL-0008.png"
+  },
+  "source": {
+    "revision": "7b8d2b2cfd723239d1092442cfc20dcca61ede99fdd0e66a4fe2c7331f17eeaa",
+    "generation_key": "06474488d2498521ee0b703b9b03e62a943bbbe16ded26b825cdbd7f619b2552",
+    "image_sha256": "03ef7e4d3b5869d0d8d4dc2e80a1518a452a309b976f765b2e4ab676a73dc6aa"
+  }
+}
