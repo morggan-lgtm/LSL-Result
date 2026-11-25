@@ -1,0 +1,140 @@
+{
+  "card_id": "LSL-0130",
+  "created_at": "2026-11-24T16:57:10.101Z",
+  "planet": {
+    "id": "kepler442b",
+    "display_name": "Kepler-442 b",
+    "star_class": "K5V",
+    "teq_k": 233,
+    "mass_earth": 2.36,
+    "tidally_locked": false,
+    "descriptors": [
+      "mineral / oxidised iron / cold clay",
+      "moderate",
+      "lingering",
+      "neutral-slightly pleasant"
+    ],
+    "earth_memory": "A K-dwarf's amber light over a cool oxidised plain: iron-rich clay, a mineral smell that stays low and even.",
+    "earth_memory_zh_tw": "",
+    "sensory_anchors": [
+      "Damp red clay after rain",
+      "Cold iron railings in autumn",
+      "A quarry at dusk, dust settling",
+      "Old terracotta kept in shade"
+    ],
+    "recommended_scent": "Wet soil",
+    "display_color": "#A0522D"
+  },
+  "odour_vector": {
+    "volatility": 0.1714,
+    "chemistry": 0.6419,
+    "intensity": 0.4487,
+    "valence": 0.539,
+    "persistence": 0.492
+  },
+  "planet_vector": {
+    "volatility": 0.144,
+    "chemistry": 0.539,
+    "intensity": 0.173,
+    "valence": 0.609,
+    "persistence": 0.475
+  },
+  "scores": [
+    {
+      "planet_id": "gj887b",
+      "display_name": "GJ 887 b",
+      "p": 0.0431
+    },
+    {
+      "planet_id": "hd20794d",
+      "display_name": "HD 20794 d",
+      "p": 0.1301
+    },
+    {
+      "planet_id": "kepler22b",
+      "display_name": "Kepler-22 b",
+      "p": 0.1342
+    },
+    {
+      "planet_id": "kepler442b",
+      "display_name": "Kepler-442 b",
+      "p": 0.4095
+    },
+    {
+      "planet_id": "taucetf",
+      "display_name": "tau Cet f",
+      "p": 0.2116
+    },
+    {
+      "planet_id": "toi715b",
+      "display_name": "TOI-715 b",
+      "p": 0.0715
+    }
+  ],
+  "dialogue": "",
+  "poster": "posters/LSL-0130.jpg",
+  "tui": {
+    "part1": {
+      "sample_id": "LSL-0130",
+      "timestamp": "2026-11-25T16:51:57.117195Z",
+      "input": "THUNDERSTORM",
+      "count": 1.0,
+      "last_time": 11.251,
+      "total_actions": 1.0,
+      "changes": 0.0,
+      "unique_choices": 1.0,
+      "target_tags": "1|3",
+      "selected_tags": "3"
+    },
+    "part2": {
+      "sample_id": "LSL-0130",
+      "timestamp": "2026-11-25T16:52:17.090866Z",
+      "session_time": 16.753,
+      "water": 15.249268,
+      "soil": 17.204302,
+      "forest": 87.292274,
+      "flower": 5.083089,
+      "fire": 79.765396,
+      "mineral": 0.293255,
+      "overall": 34.14793,
+      "slider_actions": 12.0,
+      "value_changes": 329.0,
+      "direction_changes": 0.0,
+      "total_travel": 433.138062,
+      "stabilisation_time": 3.864
+    },
+    "part3": {
+      "sample_id": "LSL-0130",
+      "timestamp": "2026-11-25T16:52:48.443574Z",
+      "session_time": 23.396,
+      "grid_cols": 50.0,
+      "grid_rows": 50.0,
+      "total_strokes": 9.0,
+      "total_points": 751.0,
+      "unique_cells": 1495.0,
+      "coverage_ratio": 0.598,
+      "total_density": 72659.421875,
+      "mean_density": 48.60162,
+      "max_density": 255.0,
+      "revisit_count": 681.0,
+      "dwell_time": 0.974,
+      "path_length": 784.218689,
+      "direction_changes": 89.0,
+      "centroid_x": 0.427623,
+      "centroid_y": 0.545927,
+      "bounding_width": 1.0,
+      "bounding_height": 0.96,
+      "erase_actions": 0.0,
+      "reset_count": 0.0
+    }
+  },
+  "assets": {
+    "pom": "pom/LSL-0130.png",
+    "drawing": "drawings/LSL-0130.png"
+  },
+  "source": {
+    "revision": "4658b6d8ff78a24ef89ba33edfb55766aa3992654e201a8d892cbc40156e630e",
+    "generation_key": "fd3d89c5417cc1c8f1662def7bd728b4cf4d6089497e1d7031ab6b6ae312cc20",
+    "image_sha256": "080fbe076d66780c5a562160e38b53326ff3355def24d42538aa3021db9319a7"
+  }
+}
